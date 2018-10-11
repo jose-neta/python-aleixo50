@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="aleixo50",
-    version="0.0.1",
+    version="0.0.2",
     author="André Santos",
     author_email="andrefs@andrefs.com",
     description="Bruno Aleixo's famous 50 Portuguese traditional dishes",
