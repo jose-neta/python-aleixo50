@@ -2,10 +2,10 @@ import os
 import json
 from .dish import Dish
 
-dishes = []
+_dirname = os.path.dirname(__file__)
+_path = os.path.join(_dirname,"recipes.json")
 
-with open(os.path.join(os.path.dirname(__file__),"recipes.json"), 'r') as json_file:
+with open(_path, 'r') as json_file:
     _recipes = json.loads(json_file.read())
 
-    dishes = [Dish(r['name']) for r in _recipes]
-
+dishes = [Dish(r['name']) for r in _recipes]
